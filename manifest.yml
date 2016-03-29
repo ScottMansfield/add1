@@ -3,3 +3,5 @@ applications:
 - name: add1
   memory: 32M
   instances: 1
+  buildpack: go_buildpack
+  command: add1

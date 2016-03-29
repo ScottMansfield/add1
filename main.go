@@ -8,7 +8,7 @@ import (
 	"github.com/shopspring/decimal"
 )
 
-const port = 7001
+const port = 8080
 
 var one = decimal.NewFromFloat(1)
 
