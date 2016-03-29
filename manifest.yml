@@ -1,0 +1,5 @@
+---
+applications:
+- name: add1
+  memory: 32M
+  instances: 1
