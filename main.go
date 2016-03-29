@@ -31,9 +31,8 @@ func add1(rw http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	if num, ok := decimal.NewFromString(in); ok {
-		num = num.Add(num, one)
-		fmt.Fprint(rw, num.String())
+	if num, err := decimal.NewFromString(in); err == nil {
+		fmt.Fprint(rw, num.Add(one).String())
 		return
 	}
 
